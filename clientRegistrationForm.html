@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rihani Creations | Register</title>
+  <link rel="stylesheet" href="StyleSheet/styles.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <style>
+    /* Registration Form Styles */
+    .registration-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 25px;
+      border: 2px solid #cce0ff;
+      border-radius: 12px;
+    }
+
+    .registration-form h2 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 20px;
+    }
+
+    .registration-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #004080;
+    }
+
+    .registration-form input,
+    .registration-form select,
+    .registration-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #cce0ff;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .registration-form button {
+      background-color: #004080;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .registration-form button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsive */
+    @media (max-width: 767px) {
+      .registration-form {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="clientRegistrationForm.html">Register</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Rihani Creations</h1>
+    <img src="images/rihani-logo.png" alt="Rihani Creations Logo" />
+  </header>
+
+  <main>
+    <div class="registration-form">
+      <h2>Client Registration Form</h2>
+      <form action="#" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g., 084-643-4917" required>
+
+        <label for="productInterest">Product of Interest:</label>
+        <select id="productInterest" name="productInterest" required>
+          <option value="">-- Select a product --</option>
+          <option value="glassMug">Custom Glass Mug</option>
+          <option value="wineBottle">Sandblasted Wine Bottle</option>
+          <option value="decorMirror">Decorative Mirror</option>
+          <option value="decorWindow">Decorative Window</option>
+          <option value="glassDoor">Glass Door</option>
+          <option value="wallMirror">Decorative Wall Mirror</option>
+        </select>
+
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message or special request"></textarea>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="tel:0846434917" class="tel-link">📞 084-643-4917</a> |
+      <a href="mailto:johansandblast@gmail.com">✉ johansandblast@gmail.com</a> |
+      &copy; 2025 Rihani Creations
+    </p>
+  </footer>
+</body>
+</html>
